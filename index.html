@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎊 Happy Lunar New Year 2025 🎆</title>
+  <style>
+    /* Load the Local Quicksand Font */
+    @font-face {
+      font-family: 'Quicksand';
+      src: url('fonts/Quicksand-Regular.ttf') format('truetype');
+      font-display: swap;
+    }
+
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #FFFAF0, #FFDAB9);
+      color: #333;
+      font-family: 'Quicksand', sans-serif;
+      text-align: center;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    /* Heading */
+    h1 {
+      font-size: 50px;
+      color: #FF4500;
+      text-shadow: 3px 3px 15px rgba(255, 69, 0, 0.8);
+      position: relative;
+      animation: glow 2s infinite alternate, bounce 3s infinite;
+    }
+
+    /* Paragraph */
+    p {
+      font-size: 22px;
+      color: #FF6347;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      animation: fadeInText 2s infinite alternate;
+    }
+
+    /* Hyperlink */
+    a {
+      font-size: 20px;
+      text-decoration: none;
+      color: #FF4500;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 25px;
+      background: #FFD700;
+      box-shadow: 0 4px 8px rgba(255, 215, 0, 0.6);
+      transition: 0.3s;
+      animation: pulse 1.5s infinite;
+    }
+
+    a:hover {
+      background: #FFA500;
+      box-shadow: 0 6px 12px rgba(255, 140, 0, 0.7);
+    }
+
+    /* Glowing Text Effect */
+    @keyframes glow {
+      0% { text-shadow: 3px 3px 15px rgba(255, 69, 0, 0.8); }
+      100% { text-shadow: 5px 5px 20px rgba(255, 0, 0, 1); }
+    }
+
+    /* Fade-in Text */
+    @keyframes fadeInText {
+      0% { opacity: 0.6; }
+      100% { opacity: 1; }
+    }
+
+    /* Bouncing Effect */
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* Pulsing Animation */
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    /* Fireworks Effect */
+    .firework {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: gold;
+      border-radius: 50%;
+      animation: explode 1.5s infinite;
+    }
+
+    @keyframes explode {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(10);
+        opacity: 0;
+      }
+    }
+
+    /* Randomly position fireworks */
+    .firework:nth-child(1) { top: 10%; left: 20%; }
+    .firework:nth-child(2) { top: 30%; left: 70%; }
+    .firework:nth-child(3) { top: 50%; left: 40%; }
+    .firework:nth-child(4) { top: 70%; left: 80%; }
+    .firework:nth-child(5) { top: 90%; left: 10%; }
+
+    /* Ensure Font Size is Locked on Mobile */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 50px !important;
+      }
+      p {
+        font-size: 22px !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 50px !important;
+      }
+      p {
+        font-size: 22px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fireworks Animation -->
+  <div class="firework"></div>
+  <div class="firework"></div>
+  <div class="firework"></div>
+  <div class="firework"></div>
+  <div class="firework"></div>
+
+  <!-- Text Content -->
+  <h1>🎊 HAPPY LUNAR NEW YEAR 2025 🎆</h1>
+  <p>🥳 Wishing you a year of clean code, effective algorithms and bug-free projects! ✨</p>
+
+</body>
+</html>
